@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: purple;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. </div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, mais texto</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vestibulum Venenatis Tristique Vehicula.</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. </div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, mais texto</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit..</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. </div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, mais texto</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. </div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, mais texto</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+        <div class="item">Lorem Ipsum Dolor Sit Amet</div>
+    </div>
+
+    <p>Space-around</p>
+    <div class="container around">
+        <div class="item">Lorem Ipsum is therefore always free from </div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>Space-between</p>
+    <div class="container between">
+        <div class="item">Lorem Ipsum is therefore always free from </div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+    
+</body>
+</html>

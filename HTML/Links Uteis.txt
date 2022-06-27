@@ -1,0 +1,3 @@
+https://pt.lipsum.com/ - Gerar textos aleatórios.
+
+https://unsplash.com/ - Gerar imagens aleatórias com alta resolução para uso.
